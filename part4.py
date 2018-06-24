@@ -1,3 +1,6 @@
+# Full Name: Alex Lu
+# UMID     : 54523810
+
 import plotly.plotly as py
 import plotly.graph_objs as go
 
@@ -9,9 +12,6 @@ def plot(nouns):
     for word in nouns:
         x_axis.append(word[0])
         y_axis.append(int(word[1]))
-
-    print(x_axis)
-    print(y_axis)
 
     data = [go.Bar(x=x_axis, y=y_axis)]
     layout = go.Layout(title="Top 5 Nouns", width=800, height=640)

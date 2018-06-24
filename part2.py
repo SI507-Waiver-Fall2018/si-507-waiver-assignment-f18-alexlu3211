@@ -1,4 +1,6 @@
-# these should be the only imports you need
+# Full Name: Alex Lu
+# UMID     : 54523810
+
 import sys
 import sqlite3
 
