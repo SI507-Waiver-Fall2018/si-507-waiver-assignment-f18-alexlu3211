@@ -1,5 +1,6 @@
 # Full Name: Alex Lu
 # UMID     : 54523810
+# Uniqname : alexjlu
 
 import plotly.plotly as py
 import plotly.graph_objs as go

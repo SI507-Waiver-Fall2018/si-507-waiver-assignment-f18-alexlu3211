@@ -1,5 +1,6 @@
 # Full Name: Alex Lu
 # UMID     : 54523810
+# Uniqname : alexjlu
 
 from tweepy import OAuthHandler, API
 import nltk

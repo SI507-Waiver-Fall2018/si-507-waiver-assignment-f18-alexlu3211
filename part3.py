@@ -1,5 +1,6 @@
 # Full Name: Alex Lu
 # UMID     : 54523810
+# Uniqname : alexjlu
 
 import requests
 from bs4 import BeautifulSoup
