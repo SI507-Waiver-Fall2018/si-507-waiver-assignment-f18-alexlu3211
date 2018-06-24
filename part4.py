@@ -1,6 +1,32 @@
-# Imports -- you may add others but do not need to
 import plotly.plotly as py
 import plotly.graph_objs as go
 
-# Code here should involve creation of the bar chart as specified in instructions
-# And opening / using the CSV file you created earlier with noun data from tweets
+
+def plot(nouns):
+    x_axis = []
+    y_axis = []
+
+    for word in nouns:
+        x_axis.append(word[0])
+        y_axis.append(int(word[1]))
+
+    print(x_axis)
+    print(y_axis)
+
+    data = [go.Bar(x=x_axis, y=y_axis)]
+    layout = go.Layout(title="Top 5 Nouns", width=800, height=640)
+
+    chart = go.Figure(data=data, layout=layout)
+    py.image.save_as(chart, filename="part4_viz_image.png")
+
+
+if __name__ == '__main__':
+    with open('noun_data.csv', 'r') as f:
+        nouns = []
+        for line in f:
+            noun = line.split(',')
+            nouns.append((noun[0], noun[1][:-1]))
+
+    nouns = nouns[1:]
+    plot(nouns)
+
